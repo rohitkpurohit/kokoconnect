@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /kokoconnect/
+
+RewriteRule ^(cfg)($|/) - [L]
+RewriteRule ^(css)($|/) - [L]
+RewriteRule ^(font-awesome)($|/) - [L]
+RewriteRule ^(fonts)($|/) - [L]
+RewriteRule ^(img)($|/) - [L]
+RewriteRule ^(js)($|/) - [L]
+RewriteRule ^(sdk)($|/) - [L]
+RewriteRule ^(lib)($|/) - [L]
+
+
+#Site Settings
+
+
+RewriteRule ^loginwithfacebook fb-login.php
+RewriteRule ^checkLogin check-user.php
+RewriteRule ^register user-registeration.php
+RewriteRule ^signupuser signup-user.php
+RewriteRule ^activateaccount activate-account.php
+RewriteRule ^confirmuser/([^/]*)$ confirm-user.php?userId=$1 [L]
+
+</IfModule>

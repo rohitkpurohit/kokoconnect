@@ -1,0 +1,9 @@
+<?php
+include('cfg/cfg.php');
+print_r($_POST);
+$uname=filter_text($_POST['uname']);
+$lname=filter_text($_POST['lname']);
+$fname=filter_text($_POST['fname']);
+$country=filter_text($_POST['country']);
+print_r($_FILES);
+?>
